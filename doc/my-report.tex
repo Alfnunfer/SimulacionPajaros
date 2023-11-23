@@ -1,0 +1,100 @@
+% LaTeX template for the coursework on Distributed Computing for
+% Multi-robot systems
+
+% Change font size here: 10pt, 11pt or 12pt are allowed
+\documentclass[a4paper,11pt]{article}
+
+% Change margins here >20mm
+\usepackage[margin=25mm]{geometry}
+\usepackage{amsmath} % package for math fonts and symbols
+\usepackage{graphicx} % Package to include figures
+\usepackage{enumitem} % For enumerations
+\usepackage[spanish]{babel} % For spanish stuff
+\usepackage[T1]{fontenc} % I this is takes accents and \~n
+
+% Uncomment this if you want sans fonts for your report
+% \renewcommand{\familydefault}{\sfdefault}
+
+
+% Create a folder named img and put your figures there. Alternatively
+% add here the folder where your images are
+\graphicspath{ {./img/} }
+
+% Set your document title here
+\title{Document Tittle}
+
+% Set your name here
+\author{Leslie Doe}
+
+% Empty date, set it to \today to get a date
+\date{}
+
+% End of the preamble, document starts here
+\begin{document}
+
+% Create the title of the document
+\maketitle
+
+% Uncoment this to get a table of contents
+% \tableofcontents
+
+% Define a section in the document
+\section{Introducci\'on}
+% You can label sections, subsections, subsubsections, figures or
+% tables with the name you want using \label{ABCD} and then make a
+% reference using \ref{ABCD}
+\label{sec:introduction} 
+This is the \LaTeX template for the report in case you decide to write
+it in \LaTeX.
+
+\section{Materiales y M\'etodos}
+This is a reference to section \ref{sec:introduction}, and this is a
+reference to the empty figure below (figure \ref{fig:empty}).
+
+\begin{figure}[h]
+  \begin{center}
+    % \includegraphics[width=0.7\textwidth]{FILENAME}
+  \caption{This is the caption of the figure} \label{fig:empty}
+  \end{center}
+\end{figure}
+
+In section \ref{sec:materiales} we present the materials used in this
+work. 
+
+\subsection{Materiales}
+\label{sec:materiales}
+These are some of the materials we used as bullet-points
+\begin{itemize}
+\item \textbf{A pencil} % text bold font
+\item \textit{A computer} % text italic
+\item \texttt{A brain} % text typewrite style
+\end{itemize}
+
+While these are with numbers
+\begin{enumerate}
+\item A pencil
+  \begin{enumerate}[label=\roman*)]
+  \item With a sharp tip
+  \item Blue
+  \end{enumerate}
+\item A computer
+\item A brain
+\end{enumerate}
+
+\subsection{M\'etodos}
+
+We used the known formula $E=mc^2$, where
+$m=\frac{m_0}{\sqrt{1-\left(\frac{v}{c}\right)^2}}$. We also used the
+formula:
+
+\begin{equation}
+  F=\sum_{i=0}^Nf_i(\alpha,\beta,\gamma,\pi) \label{eq:f}
+\end{equation}
+
+This is a reference to equation (\ref{eq:f}) which wasn't shown in
+section \ref{sec:materiales}.
+
+
+
+
+\end{document}
